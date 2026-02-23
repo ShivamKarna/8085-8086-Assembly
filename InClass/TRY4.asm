@@ -1,0 +1,8 @@
+MVI A, 67H
+MVI B,09H
+MVI C, 0CH
+MOV A,C
+SUB B
+RST 5
+
+

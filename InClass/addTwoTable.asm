@@ -1,0 +1,21 @@
+; add two table
+; table
+
+MVI A, 14H
+LXI H, 5000H
+LXI D,6000H
+LXI B, 7000H
+
+L2: CALL L1
+JNZ L2
+RST 5
+
+L1: PUSH PSW
+LDAX D
+ADD M
+STAX B
+INX H
+INX D
+POP PSW
+DCR A
+RET

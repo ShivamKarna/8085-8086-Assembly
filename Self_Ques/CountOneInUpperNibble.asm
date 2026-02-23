@@ -2,7 +2,7 @@
  ;Store the count in memory location just after the table. 	(8) 	 	 	[2072  Ashwin] 
 
  LXI H, 2000H 
- MVI C, 14H 
+ MVI C, 0AH 
  MVI D, 00H 
 
  LOOP : MOV A,M 
